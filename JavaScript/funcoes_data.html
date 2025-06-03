@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    
+    <script>
+
+        var data = new Date()
+
+        //document.write(data.getDate() + '/' + (data.getMonth()+1) + '/' + data.getFullYear())
+        //03/06/2025
+
+        //adicionar / remover dias
+        // document.write(data.toString())
+        // data.setDate(data.getDate()+1)
+        // document.write('<hr/>')
+        // document.write(data.toString())
+        // document.write('<hr/><br><br>')
+        // document.write(data.toString())
+        // data.setMonth(data.getMonth()+8)
+        // document.write('<hr/>')
+        // document.write(data.toString())
+        // document.write('<hr/><br><br>')
+        // document.write(data.toString())
+        // data.setFullYear(data.getFullYear()-1)
+        // document.write('<hr/>')
+        // document.write(data.toString())
+
+        //15/01/2025
+        var data1 = new Date(2025, 0, 15)
+
+        //23/02/2025
+        var data2 = new Date(2025, 1, 23)
+
+        document.write(data1.toString)
+        document.write('<hr/>')
+        document.write(data2.toString)
+
+        document.write('<br/><br/><hr/>')
+        //converter datas em algo q podemos calcular
+        document.write(data1.getTime())
+        document.write('<hr/>')
+        document.write(data2.getTime())
+
+
+        document.write('<br/><br/><hr/>')
+        //1 de janeiro de 1970
+        //encontrar a qtde de milisegundos entre a data1 e 
+        // data2
+        document.write(Math.abs(data1.getTime()- data2.getTime()))
+
+
+
+    </script>
+    
+</head>
+<body>
+</body>
+</html>
